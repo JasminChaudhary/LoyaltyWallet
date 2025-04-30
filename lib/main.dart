@@ -1,0 +1,97 @@
+import 'dart:async';
+import 'package:flutter/foundation.dart';
+import 'package:LoyaltyWallet/navbar.dart';
+import 'package:LoyaltyWallet/onboarding/main_screen.dart';
+import 'package:LoyaltyWallet/providers/account_provider.dart';
+import 'package:LoyaltyWallet/providers/card_provider.dart';
+import 'package:LoyaltyWallet/providers/fidelity_cards_provider.dart';
+import 'package:LoyaltyWallet/providers/locale_provider.dart';
+import 'package:LoyaltyWallet/providers/stores_provider.dart';
+import 'package:LoyaltyWallet/providers/theme_provider.dart';
+
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:shared_preferences/shared_preferences.dart'; // Import SharedPreferences
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  final themeProvider = ThemeProvider();
+
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
+  
+  // Initialize mobile ads only for non-web platforms or handle web-specific initialization
+  if (!kIsWeb) {
+    unawaited(MobileAds.instance.initialize());
+  }
+  
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (_) => AccountProvider()),
+      ChangeNotifierProvider(create: (_) => StoresProvider()),
+      ChangeNotifierProvider(create: (_) => FidelityCardsProvider()),
+      ChangeNotifierProvider(create: (_) => CardProvider()),
+      ChangeNotifierProvider(create: (_) => themeProvider),
+      ChangeNotifierProvider(create: (_) => LocaleProvider()),
+    ],
+    child: const MyApp(),
+  ));
+}
+
+final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
+
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool _showOnboarding = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _checkOnboardingStatus(); // Check onboarding status on start
+  }
+
+  Future<void> _checkOnboardingStatus() async {
+    final prefs = await SharedPreferences.getInstance();
+    bool? finishedOnboarding = prefs.getBool('finishedOnboarding');
+    setState(() {
+      _showOnboarding = finishedOnboarding == null || !finishedOnboarding;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
+    final localeProvider = Provider.of<LocaleProvider>(context);
+
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: SystemUiOverlayStyle(
+        statusBarColor: themeProvider.themeData.primaryColorDark,
+        systemNavigationBarColor: themeProvider.themeData.primaryColorDark,
+        statusBarIconBrightness:
+            themeProvider.themeData.brightness == Brightness.dark
+                ? Brightness.light
+                : Brightness.dark,
+      ),
+      child: MaterialApp(
+        theme: themeProvider.themeData,
+        navigatorObservers: [routeObserver],
+        locale: localeProvider.locale,
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: _showOnboarding ? const MainScreen() : const NavBar(pageIndex: 0),
+        debugShowCheckedModeBanner: false,
+      ),
+    );
+  }
+}

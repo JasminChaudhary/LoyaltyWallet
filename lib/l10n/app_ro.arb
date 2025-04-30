@@ -1,0 +1,340 @@
+{
+  "@@locale": "ro",
+  "title": "Titlu",
+  "@title": {
+    "description": "Textul principal afișat pe ecranul de titlu"
+  },
+  "welcome_message": "Bine ai venit!",
+  "@welcome_message": {
+    "description": "Mesajul de salut afișat utilizatorilor"
+  },
+  "login": "Autentificare",
+  "@login": {
+    "description": "Buton pentru autentificarea utilizatorului"
+  },
+  "logout": "Deconectare",
+  "@logout": {
+    "description": "Buton pentru deconectarea utilizatorului"
+  },
+  "settings": "Setări",
+  "@settings": {
+    "description": "Buton pentru accesarea setărilor"
+  },
+  "dark_mode": "Întunecat",
+  "@dark_mode": {
+    "description": "Etichetă pentru comutatorul modului întunecat"
+  },
+  "light_mode": "Luminos",
+  "@light_mode": {
+    "description": "Etichetă pentru comutatorul modului luminos"
+  },
+  "system_mode": "Sistem",
+  "@system_mode": {
+    "description": "Etichetă pentru comutatorul modului sistem"
+  },
+  "card_title": "Carduri",
+  "@card_title": {
+    "description": "Etichetă pentru titlul ecranului principal"
+  },
+  "appearance": "Aspect",
+  "@appearance": {
+    "description": "Etichetă pentru titlul filei de aspect"
+  },
+  "color_scheme": "Schemă de culori",
+  "@color_scheme": {
+    "description": "Titlu pentru schema de culori"
+  },
+  "color_scheme_description": "Activează modul întunecat sau lasă Stash să se potrivească vizual cu setările dispozitivului tău.",
+  "@color_scheme_description": {
+    "description": "Descrierea schemei de culori"
+  },
+  "search": "Caută...",
+  "@search": {
+    "description": "Etichetă pentru bara de căutare"
+  },
+  "edit": "Editează",
+  "@edit": {
+    "description": "Titlu pentru butonul de editare"
+  },
+  "share": "Distribuie",
+  "@share": {
+    "description": "Titlu pentru butonul de partajare"
+  },
+  "delete": "Șterge",
+  "@delete": {
+    "description": "Titlu pentru butonul de ștergere"
+  },
+  "edit_description": "Editează detaliile cardului tău.",
+  "@edit_description": {
+    "description": "Descrierea butonului de editare"
+  },
+  "share_description": "Distribuie acest card cu prietenii tăi.",
+  "@share_description": {
+    "description": "Descrierea butonului de partajare"
+  },
+  "delete_description": "Șterge acest card permanent.",
+  "@delete_description": {
+    "description": "Descrierea butonului de ștergere"
+  },
+  "coming_soon": "În Curând.",
+  "@coming_soon": {
+    "description": "Titlu pentru pagina de recompense"
+  },
+  "coming_soon_description": "Între timp, abonează-te pentru a primi notificări când adăugăm funcții noi.",
+  "@coming_soon_description": {
+    "description": "Descriere pentru pagina de recompense"
+  },
+  "subscribe": "Abonează-te",
+  "@subscribe": {
+    "description": "Buton pentru abonare"
+  },
+  "subscribed": "Abonat",
+  "@subscribed": {
+    "description": "Buton pentru abonați"
+  },
+  "account_settings": "Setări cont",
+  "@account_settings": {
+    "description": "Buton pentru setările contului"
+  },
+  "preferences": "Preferințe",
+  "@preferences": {
+    "description": "Titlu pentru preferințe"
+  },
+  "notifications": "Notificări",
+  "@notifications": {
+    "description": "Buton pentru notificări"
+  },
+  "resources": "Resurse",
+  "@resources": {
+    "description": "Titlu pentru resurse"
+  },
+  "leave_feedback": "Lasă un feedback",
+  "@leave_feedback": {
+    "description": "Buton pentru feedback"
+  },
+  "rate_in_app_store": "Evaluează în App Store",
+  "@rate_in_app_store": {
+    "description": "Buton pentru evaluare în App Store"
+  },
+  "sign_out": "Deconectare",
+  "@sign_out": {
+    "description": "Buton pentru deconectare"
+  },
+  "version": "Versiune",
+  "@version": {
+    "description": "Text pentru versiune"
+  },
+  "terms_and_privacy": "Termeni & Confidențialitate",
+  "@terms_and_privacy": {
+    "description": "Buton pentru termeni și confidențialitate"
+  },
+  "push_notifications": "Notificări push",
+  "@push_notifications": {
+    "description": "Comutator pentru notificări push"
+  },
+  "add_manually_button": "Sau, adaugă cardul manual.",
+  "@add_manually_button": {
+    "description": "Buton pentru adăugarea manuală"
+  },
+  "scan_loyalty_card": "Scanează cardul tău",
+  "@scan_loyalty_card": {
+    "description": "Titlu pentru scanarea cardului de loialitate"
+  },
+  "card_name_title": "Introdu numele magazinului",
+  "@card_name_title": {
+    "description": "Titlu pentru numele cardului"
+  },
+  "card_name_description": "Te rugăm să introduci numele magazinului care a emis cardul de loialitate.",
+  "@card_name_description": {
+    "description": "Descrierea pentru numele cardului"
+  },
+  "continue_button": "Continuă",
+  "@continue_button": {
+    "description": "Buton pentru continuare"
+  },
+  "language": "Limbă",
+    "@language": {
+      "description": "Buton pentru limba"
+    },
+    "language_title": "Schimbă Limba",
+    "@language_title": {
+      "description": "Language Title"
+    },
+    "language_description": "Alege limba ta preferată sau folosește limba implicită de pe dispozitivul tău.",
+    "@language_description": {
+      "description": "Language Description"
+    },
+    "welcome_to_stash": "Bun venit la Stash",
+  "@welcome_to_stash": {
+    "description": "Titlu de bun venit în aplicație"
+  },
+  "your_loyalty_cards_all_in_one_place": "Cardurile tale de loialitate, toate într-un singur loc.",
+  "@your_loyalty_cards_all_in_one_place": {
+    "description": "Descriere scurtă a aplicației"
+  },
+
+  "stash_is_better_with_an_account": "Stash este mai bun cu un cont",
+  "@stash_is_better_with_an_account": {
+    "description": "Titlu pentru solicitarea creării unui cont"
+  },
+  "consider_acc": "Consideră crearea unui cont pentru a debloca funcții exclusive precum backup-uri automate și sincronizarea cardurilor tale pe dispozitive. Nu durează decât câteva momente și va asigura că nu îți vei pierde niciodată datele.",
+  "@consider_acc": {
+    "description": "Descriere detaliată pentru solicitarea creării unui cont"
+  },
+  "create_account": "Creează cont",
+  "@create_account": {
+    "description": "Textul butonului pentru crearea unui cont"
+  },
+  "continue_without": "Continuă fără",
+  "@continue_without": {
+    "description": "Textul butonului pentru continuarea fără cont"
+  },
+  "store_your_loyalty_cards": "Păstrează cardurile tale de loialitate",
+  "@store_your_loyalty_cards": {
+    "description": "Titlu funcție pentru stocarea cardurilor"
+  },
+  "keep_all_cards_securely_stored": "Păstrează toate cardurile în siguranță.",
+  "@keep_all_cards_securely_stored": {
+    "description": "Descriere funcție pentru stocarea cardurilor"
+  },
+  "share_your_cards_with_ease": "Împarte cardurile tale cu ușurință",
+  "@share_your_cards_with_ease": {
+    "description": "Titlu funcție pentru împărtășirea cardurilor"
+  },
+  "share_cards_with_just_a_link": "Împarte cardurile cu un simplu link.",
+  "@share_cards_with_just_a_link": {
+    "description": "Descriere funcție pentru împărtășirea cardurilor"
+  },
+  "offline_access": "Acces offline",
+  "@offline_access": {
+    "description": "Titlu funcție pentru accesul offline"
+  },
+  "access_cards_without_an_internet_connection": "Accesează cardurile fără internet.",
+  "@access_cards_without_an_internet_connection": {
+    "description": "Descriere funcție pentru accesul offline"
+  },
+  "automatic_backup": "Backup automat",
+  "@automatic_backup": {
+    "description": "Titlu funcție pentru backup-ul automat"
+  },
+  "backup_cards_and_never_lose_them": "Backup cardurilor și nu le pierde niciodată.",
+  "@backup_cards_and_never_lose_them": {
+    "description": "Descriere funcție pentru backup-ul automat"
+  },
+  "create_an_account": "Creează un cont",
+  "@create_an_account": {
+    "description": "Button text to create an account"
+  },
+  "continue_without_an_account": "Continuă fără un cont",
+  "@continue_without_an_account": {
+    "description": "Button text to create an account"
+  },
+  "meet_your_new_favourite_loyalty_app": "Fă cunoștință cu aplicația ta favorită de loialitate",
+  "@meet_your_new_favourite_loyalty_app": {
+    "description": "Feature description for automatic backup"
+  },
+  "enter_the_barcode": "Introdu codul de pe card",
+  "@enter_the_barcode": {
+    "description": "preferences title"
+  },
+  "enter_the_barcode_description": "Introdu codul scris pe cardul tau de loialitate.",
+  "@enter_the_barcode_description": {
+    "description": "preferences title"
+  },
+  "how_does_your_barcode_look": "Cum arata codul tau de bare?",
+  "@how_does_your_barcode_look": {
+    "description": "Feature description for automatic backup"
+  },
+  "account_details": "Detalii Cont",
+  "@account_details": {
+    "description": "Account details modal title"
+  },
+  "basic_info": "Informații de bază",
+  "@basic_info": {
+    "description": "Account details modal title"
+  },
+  "name_details": "Nume",
+  "@name_details": {
+    "description": "Account details modal title"
+  },
+  "phone_number": "Număr de telefon",
+  "@phone_number": {
+    "description": "Account details modal title"
+  },
+  "delete_account": "Șterge Cont",
+  "@delete_account": {
+    "description": "Account details modal title"
+  },
+  "are_you_sure": "Ești sigur?",
+  "@are_you_sure": {
+    "description": "Account details modal title"
+  },
+  "delete_account_warning": "Vei pierde accesul la toate cardurile de loialitate pe care le-ai salvat, atât cele stocate în contul tău, cât și cele stocate local pe dispozitivul tău, și nu vei mai putea să le recuperezi.",
+  "@delete_account_warning": {
+    "description": "Account details modal title"
+  },
+  "this_action_cannot_be_reverted": "Această acțiune este ireversibilă.",
+  "@this_action_cannot_be_reverted": {
+    "description": "Account details modal title"
+  },
+  "onboarding_phone_hint": "Număr de telefon",
+  "@onboarding_phone_hint" : {
+    "description": "Hint text for onboarding phone number text field"
+  },
+  "onboarding_otp_hint": "Codul OTP",
+  "@onboarding_otp_hint": {
+    "description": "Hint text for OTP field"
+  },
+  "onboarding_surname_hint": "Numele de familie",
+  "@onboarding_surname_hint": {
+    "description": "Hint text for onboarding surname"
+  },
+  "onboarding_firstname_hint": "Prenumele",
+  "@onboarding_firstname_hint": {
+    "description": "Hint text for onboarding firstname"
+  },
+  "onboarding_name_title": "Hai să ne cunoaștem mai bine!",
+  "@onboarding_name_title": {
+    "description": "Titlul paginii de adaugare nume"
+  },
+  "onboarding_name_subtitle": "Introdu numele și prenumele",
+  "@onboarding_name_subtitle": {
+    "description": "Subtitlul paginii de adaugare nume"
+  },
+ 
+  
+  "enter_received_code": "Introdu codul primit",
+  "@enter_received_code": {
+    "description": "Prompt pentru introducerea codului de verificare"
+  },
+
+  "sent_verification_code_sms": "Ți-am trimis un cod de verificare prin SMS",
+  "@sent_verification_code_sms": {
+    "description": "Mesaj care indică faptul că codul de verificare a fost trimis prin SMS"
+  },
+
+  "no_first_name_entered": "Nu ai introdus un prenume.",
+  "@no_first_name_entered": {
+    "description": "Mesaj de eroare când câmpul prenume este gol"
+  },
+
+  "no_last_name_entered": "Nu ai introdus un nume.",
+  "@no_last_name_entered": {
+    "description": "Mesaj de eroare când câmpul nume este gol"
+  },
+
+  "incorrect_phone_number": "Numărul de telefon incorect.",
+  "@incorrect_phone_number": {
+    "description": "Mesaj de eroare pentru un număr de telefon incorect"
+  },
+
+  "continue_with_phone_number": "Continuă cu numărul de telefon",
+  "@continue_with_phone_number": {
+    "description": "Text pentru butonul de continuare cu numărul de telefon"
+  },
+
+  "login_or_register_with_phone": "Loghează-te sau înregistrează-te cu numărul de telefon",
+  "@login_or_register_with_phone": {
+    "description": "Text pentru a solicita utilizatorului să se logheze sau să se înregistreze folosind numărul de telefon"
+  }
+}
